@@ -74,19 +74,40 @@ Setelah skrip dijalankan, Anda akan diminta memilih salah satu dari dua format m
 
 Contoh di layar:
 ```
-=== TSP Solver ===
-Pilih tipe input:
-1. Matriks persegi (N x N)
-   Masukkan nilai matriks setiap baris
-2. Daftar sisi (u v w)
-   Masukkan baris “u v w” satu per satu (baris kosong untuk selesai)
-Pilih input (1/2): 1
-Masukkan jumlah kota (N):
-3
-Masukkan baris matriks:
-0 10 15
-20 0 35
-30 25 0
+==================================================
+           TSP SOLVER USING DYNAMIC PROGRAMMING
+==================================================
+
+Available input formats:
+  [1] Adjacency Matrix (N x N)
+      → Enter matrix dimensions and values
+  [2] Edge List (source destination weight)
+      → Enter edges one by one, empty line to finish
+
+Select input type (1 or 2): 1
+Enter number of cities (N): 3
+Enter the adjacency matrix (3 rows, 3 columns each):
+Use 0 for no direct connection between different cities.
+
+Row 1: 0 10 15
+Row 2: 20 0 35
+Row 3: 30 25 0
+
+==================================================
+                    SOLUTION RESULTS
+==================================================
+
+Minimum tour cost:      60.00
+Number of optimal tours: 1
+Execution time:         0.194 ms
+Optimal tour:           0 2192 2 2192 1 2192 0
+
+Path details:
+  City 0 2192 City 2: 15.00
+  City 2 2192 City 1: 25.00
+  City 1 2192 City 0: 20.00
+  ------------------------------
+  Total distance: 60.00
 ```
 
 ### 2. Input Daftar Sisi (Edge List)
@@ -126,11 +147,21 @@ Setelah memproses masukan dan menghitung solusi TSP, skrip akan menampilkan:
 
 Contoh di layar:
 ```
-=== Hasil ===
-Biaya minimum   : 60.00
-Jumlah rute optimal : 2
-Waktu perhitungan   : 0.123 ms
-Rute optimal        : 0 → 2 → 1 → 0
+==================================================
+                    SOLUTION RESULTS
+==================================================
+
+Minimum tour cost:      60.00
+Number of optimal tours: 1
+Execution time:         0.194 ms
+Optimal tour:           0 2192 2 2192 1 2192 0
+
+Path details:
+  City 0 2192 City 2: 15.00
+  City 2 2192 City 1: 25.00
+  City 1 2192 City 0: 20.00
+  ------------------------------
+  Total distance: 60.00
 ```
 
 ## Cara Kerja Algoritma
