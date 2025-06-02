@@ -41,6 +41,7 @@ Skrip Perl ini menerapkan pendekatan pemrograman dinamis untuk menyelesaikan Tra
 3. **Jalankan Skrip Perl**  
    Ketik perintah berikut:
    ```bat
+   chmod +x main.pl
    perl main.pl
    ```
    Program akan meminta Anda memilih format masukan dan memasukkan data grafik sesuai petunjuk.
@@ -58,6 +59,7 @@ Skrip Perl ini menerapkan pendekatan pemrograman dinamis untuk menyelesaikan Tra
 3. **Jalankan Skrip**  
    Pastikan skrip bisa dieksekusi (jika perlu jalankan `chmod +x main.pl`), lalu:
    ```bash
+   chmod +x main.pl
    perl main.pl
    ```
    Ikuti petunjuk yang muncul di layar.
@@ -118,15 +120,21 @@ Path details:
 
 Contoh di layar:
 ```
-=== TSP Solver ===
-Pilih tipe input:
-1. Matriks persegi (N x N)
-   Masukkan nilai matriks setiap baris
-2. Daftar sisi (u v w)
-   Masukkan baris “u v w” satu per satu (baris kosong untuk selesai)
-Pilih input (1/2): 2
-Apakah sisi berarah? (y/n): n
-Masukkan sisi (u v w), baris kosong untuk selesai:
+==================================================
+           TSP SOLVER USING DYNAMIC PROGRAMMING
+==================================================
+
+Available input formats:
+  [1] Adjacency Matrix (N x N)
+      → Enter matrix dimensions and values
+  [2] Edge List (source destination weight)
+      → Enter edges one by one, empty line to finish
+
+Select input type (1 or 2): 2
+Are the edges directional? (y/n): n
+Enter edges in format: source_city destination_city weight
+Enter a blank line when finished:
+
 0 1 10
 1 2 35
 2 0 30
