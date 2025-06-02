@@ -100,12 +100,12 @@ Row 3: 30 25 0
 Minimum tour cost:      60.00
 Number of optimal tours: 1
 Execution time:         0.194 ms
-Optimal tour:           0 2192 2 2192 1 2192 0
+Optimal tour:           0 -> 2 -> 1 -> 0
 
 Path details:
-  City 0 2192 City 2: 15.00
-  City 2 2192 City 1: 25.00
-  City 1 2192 City 0: 20.00
+  City 0 -> City 2: 15.00
+  City 2 -> City 1: 25.00
+  City 1 -> City 0: 20.00
   ------------------------------
   Total distance: 60.00
 ```
@@ -154,12 +154,12 @@ Contoh di layar:
 Minimum tour cost:      60.00
 Number of optimal tours: 1
 Execution time:         0.194 ms
-Optimal tour:           0 2192 2 2192 1 2192 0
+Optimal tour:           0 -> 2 -> 1 -> 0
 
 Path details:
-  City 0 2192 City 2: 15.00
-  City 2 2192 City 1: 25.00
-  City 1 2192 City 0: 20.00
+  City 0 -> City 2: 15.00
+  City 2 -> City 1: 25.00
+  City 1 -> City 0: 20.00
   ------------------------------
   Total distance: 60.00
 ```
